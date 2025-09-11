@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: rgb(75, 93, 99); padding: 20px; border-radius: 10px; max-width: 600px;">
+        <h3 style="color: black;">Registration Form</h3>
+
+        <form style="color: black;">
+            <div style="margin-bottom: 15px;">
+                <label for="first-name-input" style="display: block; margin-bottom: 5px;"><strong>First Name:</strong></label>
+                <input type="first-name" id="first-name-input" placeholder="Enter First Name"
+                style="width: 70%; padding: 8px; border: 1px solid #add; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="last-name-input" style="display: block; margin-bottom: 5px;"><strong>Last Name:</strong></label>
+                <input type="last-name" id="last-name-input" placeholder="Enter Last Name"
+                style="width: 70%; padding: 8px; border: 1px solid #add; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="email-input" style="display: block; margin-bottom: 5px; "><strong>Email:</strong></label>
+                <input type="email" id="email-input" placeholder="user@example.com"
+                style="width: 70%; padding: 8px; border: 1px solid #add; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="password-input" style="display: block; margin-bottom: 5px;"><strong>Password:</strong></label>
+                <input type="password" id="password-input" placeholder="Enter password"
+                style="width: 70%; padding: 8px; border: 1px solid #add; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="age-input" style="display: block; margin-bottom: 5px;"><strong>Age:</strong></label>
+                <input type="number" id="age-input" placeholder="Enter age(18 - 50)"
+                style="width: 70%; padding: 8px; border: 1px solid #add; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="gender-input" style="display: block; margin-bottom: 5px;"><strong>Gender:</strong></label>
+                <p><label><input type="radio" name="gender" value="male">Male</label></p>
+                <p><label><input type="radio" name="gender" value="female">Female</label></p>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="intrest-input" style="display: block; margin-bottom: 5px;"><strong>Interests:</strong></label>
+                <p><label><input type="checkbox" name="Interests" value="Python">Python</label></p>
+                <p><label><input type="checkbox" name=" Interests" value="C++">C++</label></p>
+                <p><label><input type="checkbox" name="Interests" value="Java">Java</label></p>
+                <p><label><input type="checkbox" name="Interests" value="C">C</label></p>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="country-input" style="display: block; margin-bottom: 5px;"><strong>Country:</strong></label>
+                <select name="country" id="country-input" style="width: 70%; padding: 8px; border: 1px soilid #add; border-radius: 4px;">
+                    <option value="">Select your country</option>
+                    <option value="us">United State</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="gh">Ghana</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="cp">Cyprus</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="button" style="width: 20%; padding: 8px; color: rgb(3, 3, 3); border: 1px solid #add; border-radius: 4px; background-color: darkgreen; cursor: pointer;">
+                    Submit
+
+                </button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>
