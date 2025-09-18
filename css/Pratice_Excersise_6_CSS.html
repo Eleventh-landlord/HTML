@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Grail</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Full height page */
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex: 1; 
+      gap: 20px;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    aside {
+      background: #ddd;
+      padding: 15px;
+      flex: 0 0 200px; 
+    }
+
+    main {
+      background: #fff;
+      padding: 20px;
+      flex: 1; 
+      min-width: 200px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      aside {
+        flex: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Holy Grail</h1>
+  </header>
+
+  <div class="container">
+    <aside>Left Sidebar</aside>
+    <main>
+      <h2>Main Content</h2>
+      <p>This is the central area. It expands to fill available space.</p>
+    </main>
+    <aside>Right Sidebar</aside>
+  </div>
+
+  <footer>
+    <p>Footer Content © 2025</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #f4f6f8;
+    }
+
+    /* Top Navigation Bar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #2c3e50;
+      color: white;
+      padding: 15px 30px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #3498db, #8e44ad);
+      color: white;
+      height: 200px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    /* Main Layout */
+    .main-container {
+      display: flex;
+      flex: 1;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .sidebar {
+      flex: 0 0 220px;
+      background: #34495e;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      color: #f39c12;
+    }
+
+    .content {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* Cards Section */
+    .cards {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      flex: 1;
+      background: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 30px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-column h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-column ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #f39c12;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Nav -->
+  <header>
+    <img src="C:\Users\Tife\Documents\Camera Roll\2024_10_20_07_47_IMG_5579.JPG" alt="My Logo">
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to Your Dashboard</h1>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Users</a></li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+    </aside>
+
+    <!-- Content -->
+    <div class="content">
+      <h2>Main Content</h2>
+      <p>This is where the dashboard content will appear.</p>
+
+      <!-- Cards Section -->
+      <div class="cards">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">Consulting</a></li>
+          <li><a href="#">Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

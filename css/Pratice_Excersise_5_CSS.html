@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Header Example</title>
+  <style>
+    /* Reset defaults */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Sticky header */
+    header {
+      position: fixed;    
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 0;
+      z-index: 1000;      
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* Navigation menu */
+    nav {
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline-block;  
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    /* Page content */
+    .content {
+      margin-top: 80px; /* Push content below header */
+      padding: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Welcome to My Page</h1>
+    <p>    My name is Adeleke Kehinde Boluwatife and i'm 32 years old,
+        I schooled at caleb university in which i studied computer science,
+        I'm also a stylist and ive got to style the likes of Adelekes
+    </p>
+    
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me Card</title>
+  <style>
+    /* Card container */
+    .about-card {
+      max-width: 450px;
+      margin: 50px auto;  /* Centered */
+      padding: 20px;      /* Inner spacing (box model) */
+      background-color: rgb(245, 247, 250); /* Background color */
+      border: 2px solid #333;               /* Border */
+      border-radius: 12px;                  /* Rounded corners */
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    /* Headings */
+    .about-card h1 {
+      font-family: "Georgia", serif;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase; /* Bonus: text transformation */
+      color: #0c0c0c;
+    }
+
+    .about-card h2 {
+      font-family: "Arial", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: hsl(200, 70%, 40%);
+      text-transform: capitalize;
+    }
+
+    /* Paragraphs */
+    .about-card p {
+      font-family: "Verdana", sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      color: #010101;
+    }
+
+    /* Emphasis styles */
+    .about-card .highlight {
+      font-weight: bold;
+      color: #e74c3c; /* Hex color */
+      text-decoration: underline; /* Bonus: text decoration */
+    }
+
+    /* Link styling */
+    .about-card a {
+      color: #2980b9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .about-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-card">
+    <h1>About Me</h1>
+    <h2>Creative Web Developer</h2>
+    <p>Hello! My name is <span class="highlight">Adeleke Kehinde Boluwatife</span>, and I’m passionate about designing and coding modern websites with clean, user-friendly designs.</p>
+    <p>I specialize in <span class="highlight">HTML, CSS, and JavaScript</span>. I also enjoy learning new frameworks and exploring creative problem-solving approaches.</p>
+    <p>If you'd like to connect, check out my <a href="#">github @Eleventhlandlord</a> or <a href="#">LinkedIn</a> profile.</p>
+  </div>
+
+</body>
+</html>
